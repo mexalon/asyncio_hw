@@ -49,7 +49,7 @@ async def one_char_processing(j):
     char_obj.species = await get_param(j.get('species'))
     char_obj.starships = await get_param(j.get('starships'))
     char_obj.vehicles = await get_param(j.get('vehicles'))
-    print(char_obj)
+    print(f"Collecting {char_obj}")
     return char_obj
 
 
