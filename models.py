@@ -15,9 +15,9 @@ class Char(Base):
     films = sq.Column(sq.String)
     gender = sq.Column(sq.String)
     hair_color = sq.Column(sq.String)
-    height = sq.Column(sq.Integer)
+    height = sq.Column(sq.String)
     homeworld = sq.Column(sq.String)
-    mass = sq.Column(sq.Integer)
+    mass = sq.Column(sq.String)
     name = sq.Column(sq.String)
     skin_color = sq.Column(sq.String)
     species = sq.Column(sq.String)
@@ -25,7 +25,7 @@ class Char(Base):
     vehicles = sq.Column(sq.String)
 
     def __str__(self):
-        return f"{self.id} - {self.name}"
+        return f"{self.name}"
 
     def __repr__(self):
         return self.__str__()
